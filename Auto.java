@@ -1,39 +1,41 @@
+package Car;
 import java.util.List;
-import java.util.Arrays;
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class Auto {
 
-	private String mark;
+	private Automark mark;
 	private String mudel;
 	private String numbrimärk;
-	private Date kuupäev;
-	public List<String> omanikud;
-	public static void main(String[] args) {
+	private LocalDate kuupäev;
+	private List<String> omanikud;
 		
 
+
+	public LocalDate getKuupäev() {
+		return kuupäev;
 	}
 
-	public Auto(String mark, String mudel, String numbrimärk, Date kuupäev, List<String> omanikud) {
-		this.mark = mark;
+	public Auto(Automark opel, String mudel, String numbrimärk, LocalDate kuupäev, List<String> omanikud) {
+		this.mark = opel;
 		this.mudel = mudel;
 		this.numbrimärk = numbrimärk;
-		this.setKuupäev(kuupäev);
-		this.omanikud = new ArrayList<>();
+		this.kuupäev = kuupäev;
+		this.omanikud = omanikud;
 	}
 
 	/**
 	 * @return the automark
 	 */
-	public String getAutomark() {
+	public Automark getAutomark() {
 		return mark;
 	}
 
 	/**
 	 * @param automark the automark to set
 	 */
-	public void setAutomark(String automark) {
+	public void setAutomark(Automark automark) {
 		this.mark = automark;
 	}
 
@@ -71,15 +73,27 @@ public class Auto {
 
 	@Override
 	public String toString() {
-		return "Auto [mark=" + mark + ", mudel=" + mudel + ", numbrimärk=" + numbrimärk + ", omanikud="
-				+ omanikud + "]";
+		return "Auto [mark=" + mark + ", mudel=" + mudel + ", numbrimärk=" + numbrimärk + ", kuupäev=" + kuupäev
+				+ ", omanikud=" + omanikud + "]";
 	}
 
-	public Date getKuupäev() {
-		return kuupäev;
+	public Automark getMark() {
+		return mark;
 	}
 
-	public void setKuupäev(Date kuupäev) {
+	public void setMark(Automark mark) {
+		this.mark = mark;
+	}
+
+	public List<String> getOmanikud() {
+		return omanikud;
+	}
+
+	public void setOmanikud(List<String> omanikud) {
+		this.omanikud = omanikud;
+	}
+
+	public void setKuupäev(LocalDate kuupäev) {
 		this.kuupäev = kuupäev;
 	}
 	

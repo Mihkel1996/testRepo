@@ -1,6 +1,8 @@
 package student;
 
 import java.time.LocalDate;
+import java.time.Period;
+import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -61,7 +63,16 @@ public class Student {
 	public void addSubject(Subject subject) {
 		this.subjects.add(subject);
 	}
+	
+	public String getAgeAsString() {
+		LocalDate today = LocalDate.now();
+		Period p = Period.between(dateOfBirth, today);
+		long p2 = ChronoUnit.DAYS.between(dateOfBirth, today);
 
+	return this.nime + " is " + p.getYears() + " years, " + p.getMonths() +
+						" months, and " + p.getDays() +
+						" days old. (" + p2 + "days total)";
+	}
 	@Override
 	public String toString() {
 		return "Student [nime=" + nime + ", dateOfBirth=" + dateOfBirth + ", subjects=" + subjects + ", type=" + type

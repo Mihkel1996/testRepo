@@ -7,19 +7,19 @@ public class Auto {
 
 	private String mark;
 	private String mudel;
-	private String numbrim√§rk;
-	private Date kuup√§ev;
+	private String numbrim‰rk;
+	private Date kuup‰ev;
 	public List<String> omanikud;
 	public static void main(String[] args) {
 		
 
 	}
 
-	public Auto(String mark, String mudel, String numbrim√§rk, Date kuup√§ev, List<String> omanikud) {
+	public Auto(String mark, String mudel, String numbrim‰rk, Date kuup‰ev, List<String> omanikud) {
 		this.mark = mark;
 		this.mudel = mudel;
-		this.numbrim√§rk = numbrim√§rk;
-		this.setKuup√§ev(kuup√§ev);
+		this.numbrim‰rk = numbrim‰rk;
+		this.setKuup‰ev(kuup‰ev);
 		this.omanikud = new ArrayList<>();
 	}
 
@@ -52,17 +52,17 @@ public class Auto {
 	}
 
 	/**
-	 * @return the numbrim√§rk
+	 * @return the numbrim‰rk
 	 */
-	public String getNumbrim√§rk() {
-		return numbrim√§rk;
+	public String getNumbrim‰rk() {
+		return numbrim‰rk;
 	}
 
 	/**
-	 * @param numbrim√§rk the numbrim√§rk to set
+	 * @param numbrim‰rk the numbrim‰rk to set
 	 */
-	public void setNumbrim√§rk(String numbrim√§rk) {
-		this.numbrim√§rk = numbrim√§rk;
+	public void setNumbrim‰rk(String numbrim‰rk) {
+		this.numbrim‰rk = numbrim‰rk;
 	}
 	
 	public void addOmanikud(String omanik) {
@@ -71,19 +71,18 @@ public class Auto {
 
 	@Override
 	public String toString() {
-		return "Auto [mark=" + mark + ", mudel=" + mudel + ", numbrim√§rk=" + numbrim√§rk + ", omanikud="
+		return "Auto [mark=" + mark + ", mudel=" + mudel + ", numbrim‰rk=" + numbrim‰rk + ", omanikud="
 				+ omanikud + "]";
 	}
 
-	public Date getKuup√§ev() {
-		return kuup√§ev;
+	public Date getKuup‰ev() {
+		return kuup‰ev;
 	}
 
-	public void setKuup√§ev(Date kuup√§ev) {
-		this.kuup√§ev = kuup√§ev;
+	public void setKuup‰ev(Date kuup‰ev) {
+		this.kuup‰ev = kuup‰ev;
 	}
 	
 
 }
-
 

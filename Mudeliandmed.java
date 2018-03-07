@@ -5,7 +5,7 @@ import java.time.LocalDate;
 public class Mudeliandmed {
 
 	private String nimetus;
-	private LocalDate alguskuup‰ev;
-	private LocalDate lıpukuup‰ev;
-	private Mudeliliik nimetus;
+	private LocalDate alguskuup√§ev;
+	private LocalDate l≈ëpukuup√§ev;
+	private Mudeliliik liik;
 }

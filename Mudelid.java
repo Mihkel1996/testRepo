@@ -17,7 +17,33 @@ public class Mudelid {
 		this.alguskuupäev = alguskuupäev;
 		this.lőpukuupäev = lőpukuupäev;
 		this.mudeliliik = mudeliliik;
+
+	}
+	public String getNimetus() {
+		return nimetus;
+	}
+	public void setNimetus(String nimetus) {
+		this.nimetus = nimetus;
+	}
+	public LocalDate getAlguskuupäev() {
+		return alguskuupäev;
+	}
+	public void setAlguskuupäev(LocalDate alguskuupäev) {
+		this.alguskuupäev = alguskuupäev;
+	}
+	public LocalDate getLőpukuupäev() {
+		return lőpukuupäev;
+	}
+	public void setLőpukuupäev(LocalDate lőpukuupäev) {
+		this.lőpukuupäev = lőpukuupäev;
+	}
+	public String getMudeliliik() {
+		return mudeliliik;
+	}
+	public void setMudeliliik(String mudeliliik) {
+		this.mudeliliik = mudeliliik;
 	}
 
 	
 	}
+

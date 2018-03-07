@@ -34,7 +34,7 @@ public class MapDemoEx {
 				persons.put(3, "Anti");
 
 				System.out.println(lowestKeyValue(persons, "Siim"));
-				System.out.println(changeValue(persons, 'K', '4', "Karl"));
+				System.out.println(changeValue(persons, 'S', '4', "Karl"));
 
 			}
 

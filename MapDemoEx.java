@@ -11,20 +11,22 @@ import java.util.Set;
 
 public class MapDemoEx {
 
+	private static MapDemoEx mde;
+
 	public static void main(String[] args) {
-		//Meetod, mis vahetab etteantud mapi v‰ikseima vıtme v‰‰rtuse parameetriga etteantud v‰‰rtuseks. (Map<Integer, String> )
-		//N‰ide: meetodNimi( {2=Indrek, 1=Kalmer, 3=Mati},  ìJ¸riî)-> {2=Indrek, 1=J¸ri, 3=Mati }
+		//Meetod, mis vahetab etteantud mapi v√§ikseima v√µtme v√§√§rtuse parameetriga etteantud v√§√§rtuseks. (Map<Integer, String> )
+		//N√§ide: meetodNimi( {2=Indrek, 1=Kalmer, 3=Mati},  ‚ÄúJ√ºri‚Äù)-> {2=Indrek, 1=J√ºri, 3=Mati }
 
 		 
 
-		//2. Kıik etteantud mapi sellised v‰‰rtused ‰ra muuta, milles on v‰hem kui 6 (vıi parameetrina ette antud v‰‰rtus) t‰hte ja algab ëAí t‰hega (vıi parameetriga etteantud v‰‰rtusega).
+		//2. K√µik etteantud mapi sellised v√§√§rtused √§ra muuta, milles on v√§hem kui 6 (v√µi parameetrina ette antud v√§√§rtus) t√§hte ja algab ‚ÄòA‚Äô t√§hega (v√µi parameetriga etteantud v√§√§rtusega).
 
-		//N‰ide m‰‰ratud tingimustega: meetodiNimi( {2=Aimar, 1=Kalmer, 3=Mati}) ->  {2=Muudetud, 1=Kalmer, 3=Mati}
+		//N√§ide m√§√§ratud tingimustega: meetodiNimi( {2=Aimar, 1=Kalmer, 3=Mati}) ->  {2=Muudetud, 1=Kalmer, 3=Mati}
 
-		//N‰ide parameetritega: meetodiNimi({2=Aimar, 1=Kalmer, 3=Mati}, 5, ìMî, ìValdurî) -> { 2=Aimar, 1=Kalmer, 3=Valdur}
+		//N√§ide parameetritega: meetodiNimi({2=Aimar, 1=Kalmer, 3=Mati}, 5, ‚ÄúM‚Äù, ‚ÄúValdur‚Äù) -> { 2=Aimar, 1=Kalmer, 3=Valdur}
 
 
-				MapDemoEx mde = new MapDemoEx();
+				mde = new MapDemoEx();
 
 				HashMap<Integer, String> persons = new HashMap<>();
 				persons.put(5, "Indrek");
@@ -32,11 +34,11 @@ public class MapDemoEx {
 				persons.put(3, "Anti");
 
 				System.out.println(lowestKeyValue(persons, "Siim"));
-				System.out.println(changeValue(persons, 'A', 6, "Jaan"));
+				System.out.println(changeValue(persons, 'K', '4', "Karl"));
 
 			}
 
-			// ‹l 1
+			// √úl 1
 			public static Map<Integer, String> lowestKeyValue(Map<Integer, String> map, String newValie) {
 				List<Integer> keys = new ArrayList<>();
 				
@@ -47,7 +49,7 @@ public class MapDemoEx {
 				return map;
 			}
 
-			// ‹l 2
+			// √úl 2
 			public static Map<Integer, String> changeValue(HashMap<Integer, String> map, Character letter, int length,
 					String newValue) {
 				
@@ -57,6 +59,7 @@ public class MapDemoEx {
 						map.put(entry.getKey(), newValue);
 					}
 				}
+				
 
 				return map;
 			}

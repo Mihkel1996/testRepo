@@ -8,21 +8,21 @@ public class Auto {
 	private Automark mark;
 	private String mudel;
 	private String numbrimärk;
-	private LocalDate kuupäev;
-	private List<String> omanikud;
+	private LocalDate arvelevotuKp;
+	private List<Omanik> omanikud;
 		
 
 
 	public LocalDate getKuupäev() {
-		return kuupäev;
+		return arvelevotuKp;
 	}
 
-	public Auto(Automark opel, String mudel, String numbrimärk, LocalDate kuupäev, List<String> omanikud) {
-		this.mark = opel;
+	public Auto(Automark mark, String mudel, String numbrimärk, LocalDate kuupäev) {
+		this.mark = mark;
 		this.mudel = mudel;
 		this.numbrimärk = numbrimärk;
-		this.kuupäev = kuupäev;
-		this.omanikud = omanikud;
+		this.arvelevotuKp = kuupäev;
+		this.omanikud = new ArrayList<>();
 	}
 
 	/**
@@ -67,13 +67,13 @@ public class Auto {
 		this.numbrimärk = numbrimärk;
 	}
 	
-	public void addOmanikud(String omanik) {
+	public void addOmanikud(Omanik omanik) {
 		this.omanikud.add(omanik);
 	}
 
 	@Override
 	public String toString() {
-		return "Auto [mark=" + mark + ", mudel=" + mudel + ", numbrimärk=" + numbrimärk + ", kuupäev=" + kuupäev
+		return "Auto [mark=" + mark + ", mudel=" + mudel + ", numbrimärk=" + numbrimärk + ", kuupäev=" + arvelevotuKp
 				+ ", omanikud=" + omanikud + "]";
 	}
 
@@ -85,16 +85,16 @@ public class Auto {
 		this.mark = mark;
 	}
 
-	public List<String> getOmanikud() {
+	public List<Omanik> getOmanikud() {
 		return omanikud;
 	}
 
-	public void setOmanikud(List<String> omanikud) {
+	public void setOmanikud(List<Omanik> omanikud) {
 		this.omanikud = omanikud;
 	}
 
 	public void setKuupäev(LocalDate kuupäev) {
-		this.kuupäev = kuupäev;
+		this.arvelevotuKp = kuupäev;
 	}
 	
 

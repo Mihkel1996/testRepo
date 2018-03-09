@@ -8,9 +8,9 @@ import java.util.List;
 public class App00 {
 
 	public static void main(String[] args) {
-		List<String> omanikud = new ArrayList<>(Arrays.asList("Peeter Maasik"));
-		Auto car1 = new Auto(Automark.BMW, "M4", "555 BMW", LocalDate.parse("2017-02-10"), omanikud);
-		//car1.addOmanikud(new omanik("", "", new Isikukood("36020348343",Riigikoodid.ET), LocalDate.parse("2014-12-22"));
+		Auto car1 = new Auto(Automark.BMW, "M4", "555 BMW", LocalDate.parse("2017-02-10"));
+		car1.addOmanikud(new Omanik("Mart", "Juur", "36548374657", LocalDate.parse("2014-12-22")));
+		//car1.addOmanikud(new Omanik("Mart", "Juur", new Isikukood("25555555555",Riigikood.ET) LocalDate.parse("2016-10-29")));
 		System.out.println(car1);
 
 	}

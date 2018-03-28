@@ -29,7 +29,7 @@ public class App111 {
 
         Car a7 = new Car(Car.Mark.AUDI, new Model("A7", "2011 - 2017", Model.Type.SEDAN),
                 "6H7DD", LocalDate.of(2012, 4, 9));
-        a7.addOwner(new Owner("Jaan", "Uss", new IdentificationNumber(36711118009L, IdentificationNumber.CountryIndex.LATVIA),
+        a7.addOwner(new Owner("Jaan", "Paat", new IdentificationNumber(36711118009L, IdentificationNumber.CountryIndex.LATVIA),
                 LocalDate.of(1970, 10, 7), LocalDate.of(2018, 5, 9)));
 
         cars.add(a7);

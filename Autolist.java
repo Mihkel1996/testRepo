@@ -9,8 +9,9 @@ public class Autolist {
 
 	public static void main(String[] args) {
 		List<String> omanikud = new ArrayList<>(Arrays.asList("Juri", "Raivo"));
-		//Auto car1 = new Auto(Automark.OPEL, "X20", "494 KEA", LocalDate.parse("2016-02-05"), omanikud);
-		//System.out.println(car1);
+		Car a7 = new Car(Car.Mark.AUDI, new Model("A7", "2011 - 2017", Model.Type.SEDAN),
+                "6H7DD", LocalDate.of(2012, 4, 9));
+		System.out.println(a7);
 		
 	}
 
